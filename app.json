@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/start/start",
+    "pages/nearby/nearby",
+    "pages/toplist/toplist",
+    "pages/personalCenter/personalCenter",
+    "pages/nearbyActivity/nearbyActivity",
+    "pages/toplistActivity/toplistActivity",
+    "pages/feedback/join_chart",
+    "pages/feedback/APP",
+    "pages/feedback/wantToPlay",
+    "pages/location/location"
+  ],
+  "window":{
+    "navigationBarTitleText": "凑热闹",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor":"#F1DD12"
+  },
+  "tabBar": {
+    "color": "#272636",
+    "selectedColor": "#F1DD12",
+    "backgroundColor": "#fff",
+    "borderStyle": "#a8a8a8",
+    "text-algin":"left",
+    "font-size":"30rpx",
+    "list": [
+      {
+        "pagePath": "pages/toplist/toplist",
+        "iconPath": "img/class/Society.png",
+        "selectedIconPath": "img/class/Society1.png",
+        "text": "附近社团"
+      },
+      {
+        "pagePath": "pages/toplist/toplist",
+        "iconPath": "img/class/Activity.png",
+        "selectedIconPath": "img/class/Activity1.png",
+        "text": "top活动"
+      }
+    ]
+  }
+}

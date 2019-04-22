@@ -1,0 +1,63 @@
+<!--pages/toplistActivity/toplistActivity.wxml-->
+<!--pages/toplist/toplist.wxml-->
+<view class="container"> 
+  <template is="head" data="{{title: 'swiper'}}"/>
+    <scroll-view scroll-into-view="{{toView}}" scroll-y="true" scroll-with-animation="true" style="height:500px" class="page-body">
+      <view class="swiper-container">
+            <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{images}}" wx:key="*this">
+              <swiper-item>
+                <image src="{{item}}" class="slide-image"></image> 
+              </swiper-item>
+            </block>
+          </swiper> 
+      </view>
+      <view class="activity-details">
+        <view>
+          <image src="/img/participant_num.png"></image>
+          当前参与人数：118
+          <image src="/img/share.png" class="share"></image>
+        </view>
+        <view>
+          <image src="/img/deadline.png"></image>
+          活动截止日期：2018.6.23
+        </view>
+      </view>
+      <view class="activities-info">
+        <view class="label-title">活动介绍</view>
+        <view class="activities-text">
+            去“再见民大”看看，是我从大一开始就心心念念的，奈何太火爆，实在是一票难得。舍友说毕业的时候总能看到。我回答他，那怎么一样。然而最终，我还是在大学最后的时光里见证了“再见民大”的风采，这是唯一一次，也是最后一次。
+        </view>
+        <view class="activities-text">
+            班级照片里的我总是不好看，但这次，我是第一次在意自己在集体照中的模样。按下相机的快门，只是一瞬的时间，但那一瞬，我的脑海中仿佛走马灯一般略过了我大学四年的时光。
+        </view>
+        <view class="activities-text">
+            我的大学，哪怕是吃饭，喝水，洗漱，周围都总有舍友的身影。从入学以来的相识，相知，再到谈心，争吵。与他们的情谊，是我的民大生活里最大的收获和最珍贵的回忆。
+        </view>
+        <view class="activities-text">
+        “再见民大”是一场电影，它并非一部场景火爆的好莱坞大片，也不一定会是一场浪漫邂逅的爱情电影。但它是家长里短，婆婆妈妈的家庭片，又是意气昂扬，奋发向上的青春片。他的每一帧每一秒都在诉说着我们自己的故事，而我们每个人，都是电影的主人公。
+        </view>   
+      </view> 
+      <view class="comment-info">
+        <view class="label-title">评论<text style="color:red"></text></view>
+        <view class="comment">
+          <view class="user">
+            <image style="width: 100rpx; height: 100rpx;" src="/img/user.png"></image>
+            <view style="text-align:center;width:100rpx;">用户1</view>
+          </view>
+          <view  class="comment-text">
+            <view> 我的大学，哪怕是吃饭，喝水，洗漱，周围都总有舍友的身影。从入学以来的相识，相知，再到谈心，争吵。与他们的情谊，是我的民大生活里最大的收获和最珍贵的回忆。</view>
+            <view style="color: #B0B0B0;font-size:24rpx;">2018.6.22</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="footer-box">
+        <view class="comment" bindtap="comment" data-opt="comment-info">评论</view>
+        <view class="wantToPlay" bindtap="wantToPlay">想玩</view>
+    </view>
+  <template is="foot" />
+</view>
+
+

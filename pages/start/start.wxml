@@ -1,0 +1,24 @@
+<!--start.wxml-->
+<view class="container">
+  <view class="remind-box" wx:if="{{remind}}">
+    <image class="remind-img" src="/img/loading.gif"></image>
+  </view>
+  <block wx:else>
+    <image class="name1" src="/img/name1.png"></image>
+    <image class="name2" src="/img/name2.png"></image>
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+        <image class="logo" src="{{userInfo.avatarUrl}}"></image>
+        <image class="wave" src="/img/wave.png" mode="aspectFill"></image>
+        <image class="wave wave-bg" src="/img/wave.png" mode="aspectFill"></image>
+      </view>
+      <view class="bd">
+         <image class="smalltitle" src="/img/slogan.png"></image>
+        <view class="confirm-btn" bindtap='goToIndex'>
+          <text >开始凑热闹</text>
+        </view>
+        <text class="copyright">@Copyright 2018 凑热闹</text>
+      </view>
+    </view>
+  </block>
+</view>

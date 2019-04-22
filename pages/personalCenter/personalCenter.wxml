@@ -1,0 +1,13 @@
+<!--pages/personalCenter/personalCenter.wxml-->
+<view class="container">
+  <view class="header">
+    <image class="userImg" src="/img/user_qpp.png"></image>
+    <view class="userName">乔屁屁</view>
+  </view>
+  <view class="content">
+    <view class="coupon">我的活动</view>
+    <view class="coupon">我的想玩</view>
+    <view class="tel">客服电话: 153-1913-5349</view>
+    <view class="signOut">退出账号</view>
+  </view>
+</view>

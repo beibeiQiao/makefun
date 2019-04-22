@@ -1,0 +1,40 @@
+<!--pages/HomePage/HomePage.wxml-->
+<scroll-view bindscrolltolower="lower" class="scroll-activities-list" scroll-y="true" style="height:100%">
+  <view class="inform">
+    <swiper indicator-dots="true" autoplay="{{autoplay}}" indicator-color="rgba(228,228,228,1)" indicator-active-color="#FECA49">
+      <block wx:for="{{images}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"></image> 
+        </swiper-item>
+      </block>
+    </swiper> 
+  </view>
+  <view class="search">
+    <navigator url="/pages/location/location" >
+      <image src="/img/class/search.png" class="search-icon"></image>
+      <view class="search-text">点击搜索你pick的社团</view>
+    </navigator>
+  </view>
+  <view class="categoryList">
+    <block wx:for="{{categoryList}}" wx:key="" >
+      <view class="category-info" bindtap='chooseImg' data-index='{{index}}'>
+        <image src="{{imgHoverIndex == index ?item.a_src:item.src}}" class="category-image"></image>
+        <view class="category-text">{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="title">--------  附近社团  --------</view>
+  <view class="societies">
+      <block wx:for="{{societiesList}}" wx:key="">
+        <view class="society" bintap=''>
+          <view class="society-image">
+            <image src="{{item.image}}"></image>
+          </view>
+          <view class="society-info">
+            <view class="society-name">{{item.name}}</view>
+            <view class="society-short-info">{{item.info}}</view>
+          </view>
+        </view>
+      </block>
+  </view>
+</scroll-view>

@@ -1,0 +1,5 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<!--这里data中article为bindName-->
+<scroll-view scroll-y="true" style="height:500px" class="page-body">
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</scroll-view>

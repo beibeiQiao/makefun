@@ -1,0 +1,33 @@
+<!--pages/nearby/nearby.wxml-->
+<scroll-view bindscrolltolower="lower" class="scroll-activities-list" scroll-y="true" style="height:100%">
+  <view class="heard"> 
+    <navigator url="/pages/location/location" >
+      <view class="heard-location">
+        <image src="/img/location.png" class="heard-location-icon"/>
+        <text class="heard-location-text">北京市海淀区中央民族大学</text>
+      </view>
+    </navigator>
+    <view class="heard-slogan">
+      <image src="/img/slogan.png" class="heard-slogan-image"/>
+    </view>
+  </view>
+  <view class="title">--------  附近活动  --------</view>
+  <view class="activitiesList">
+    <navigator url="/pages/nearbyActivity/nearbyActivity" >
+      <block>
+        <view class="activities-list">
+          <view class="activities-info-image">
+            <image src="/activities/img/xinfeng/xinfeng.png" class="activities-image"/>
+          </view>
+          <view class="activities-info">
+            <view class="activities-info-name"> 新生风采大赛 </view>
+            <view class="activities-info-participant_num"> 当前参与人数：567 </view>
+            <view class="activities-info-deadline"> 截止日期：2018.10.30 </view>
+            <view class="activities-info-stars"> 评分:***** </view>
+            <view class="activities-info-distance"> 距离:0.5km </view>
+          </view>
+        </view>
+      </block>
+    </navigator>
+  </view>
+</scroll-view>

@@ -1,0 +1,8 @@
+<!--pages/feedback/App.wxml-->
+<image src="/img/logo.png" class="logo"></image>
+<view class="message">请下载凑热闹APP前往报名：</view>
+<view class="message">安卓版：</view>
+<view class="message">苹果版：</view>
+<image src="/img/OfficialAccount.png" class="OfficialAccount"></image>
+<view class="message">关注公众号获取更多资讯</view>
+<text class="copyright">@Copyright 2018 凑热闹</text>

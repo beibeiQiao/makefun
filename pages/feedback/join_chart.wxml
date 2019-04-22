@@ -1,0 +1,5 @@
+
+<image src="/img/wechat.png" class="icon"></image>
+<view class="message">请加入微信群：</view>
+<image src="/activities/img/xinfeng/xinfengGroup.png" class="group"></image>
+<text class="copyright">@Copyright 2018 凑热闹</text>
